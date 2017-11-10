@@ -1,0 +1,95 @@
+{
+    "users": {
+        "thedogg@snoop.com": {
+            "username": "thedogg@snoop.com",
+            "articleIds": [
+                1,
+                2
+            ],
+            "commentIds": [
+                2
+            ]
+        },
+        "narc@email.webs": {
+            "username": "narc@email.webs",
+            "articleIds": [],
+            "commentIds": [
+                1
+            ]
+        }
+    },
+    "articles": {
+        "1": {
+            "id": 1,
+            "title": "Does this work now?",
+            "url": "www.test.com",
+            "username": "thedogg@snoop.com",
+            "commentIds": [],
+            "upvotedBy": [],
+            "downvotedBy": []
+        },
+        "2": {
+            "id": 2,
+            "title": "Hey the database is working and the formatting is nice!",
+            "url": "www.cool.com",
+            "username": "thedogg@snoop.com",
+            "commentIds": [
+                1,
+                2
+            ],
+            "upvotedBy": [],
+            "downvotedBy": [
+                "narc@email.webs"
+            ],
+            "comments": [
+                {
+                    "id": 1,
+                    "body": "Lol. Don't get cocky stackoverflow held your hand again.",
+                    "username": "narc@email.webs",
+                    "articleId": 2,
+                    "upvotedBy": [],
+                    "downvotedBy": [
+                        "thedogg@snoop.com"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "body": ":(\n",
+                    "username": "thedogg@snoop.com",
+                    "articleId": 2,
+                    "upvotedBy": [
+                        "thedogg@snoop.com",
+                        "narc@email.webs"
+                    ],
+                    "downvotedBy": []
+                }
+            ]
+        },
+        "3": null
+    },
+    "nextArticleId": 4,
+    "comments": {
+        "1": {
+            "id": 1,
+            "body": "Lol. Don't get cocky stackoverflow held your hand again.",
+            "username": "narc@email.webs",
+            "articleId": 2,
+            "upvotedBy": [],
+            "downvotedBy": [
+                "thedogg@snoop.com"
+            ]
+        },
+        "2": {
+            "id": 2,
+            "body": ":(\n",
+            "username": "thedogg@snoop.com",
+            "articleId": 2,
+            "upvotedBy": [
+                "thedogg@snoop.com",
+                "narc@email.webs"
+            ],
+            "downvotedBy": []
+        }
+    },
+    "nextCommentId": 3
+}
